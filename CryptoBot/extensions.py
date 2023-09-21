@@ -20,9 +20,6 @@ class CryptoConverter:
             raise APIException(f'Неудалось обработать валюту {quote}')
         try:
             amount = float(amount)
-            # if amount != 1:
-            #     amount = amount * total_base
-            #     return amount
         except ValueError:
             raise APIException(f'Неудалось обработать количество {amount}')
 
